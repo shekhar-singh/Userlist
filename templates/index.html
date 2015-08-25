@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>user</title>
+    </head>
+
+    <body>
+        <h1>shekhar says...hello world!</h1>
+
+        {% if a %}
+            <ul>
+                {% for username in a %}
+                <li>{{ username.username }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <strong>There are no Username present.</strong>
+        {% endif %}
+
+        <a href="/game/about/">About</a>
+    </body>
+</html>

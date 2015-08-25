@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>user</title>
+    </head>
+
+    <body>
+        <h1>Add a name</h1>
+
+        <form id="category_form" method="post" action="/game/add_user/">
+
+            {% csrf_token %}
+            {{form}}
+
+
+
+
+
+
+
+            
+            <input type="submit" name="submit" value="Create Category" />
+        </form>
+    </body>
+
+</html>
